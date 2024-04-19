@@ -4,7 +4,7 @@ import BrandTwo from '../../images/brand/brand-02.svg';
 import BrandThree from '../../images/brand/brand-03.svg';
 import BrandFour from '../../images/brand/brand-04.svg';
 import BrandFive from '../../images/brand/brand-05.svg';
-import srilanka from '../../images/brand/srilanka.png'
+// import srilanka from '../../images/brand/srilanka.png'
 
 const brandData: BRAND[] = [
   {
