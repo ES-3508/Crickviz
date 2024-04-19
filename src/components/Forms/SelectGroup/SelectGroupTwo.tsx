@@ -68,6 +68,9 @@ const SelectGroupTwo: React.FC = () => {
           <option value="Canada" className="text-body dark:text-bodydark">
             Canada
           </option>
+          <option value="Srilanka" className="text-body dark:text-bodydark">
+            Sri Lanka
+          </option>
         </select>
 
         <span className="absolute top-1/2 right-4 z-10 -translate-y-1/2">

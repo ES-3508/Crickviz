@@ -4,7 +4,10 @@ import BrandTwo from '../../images/brand/brand-02.svg';
 import BrandThree from '../../images/brand/brand-03.svg';
 import BrandFour from '../../images/brand/brand-04.svg';
 import BrandFive from '../../images/brand/brand-05.svg';
-// import srilanka from '../../images/brand/srilanka.png'
+import srilanka from '../../images/brand/srilanka.png';
+import india from '../../images/brand/india.png';
+import australia from '../../images/brand/australia.png';
+import newzealand from '../../images/brand/newzealand.png';
 
 const brandData: BRAND[] = [
   {
@@ -62,8 +65,8 @@ const brandData: BRAND[] = [
 
 const TableOne = () => {
   return (
-    <div>
-    <div className="rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
+    <div className='flex flex-row'>
+    <div className=" basis-3/4 rounded-sm border border-stroke bg-white px-5 pt-6 pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
       <h4 className="mb-6 text-xl font-semibold text-black dark:text-white">
         Top Countries
       </h4>
@@ -124,7 +127,19 @@ const TableOne = () => {
         ))}
       </div>
     </div>
-        {/* <img src={srilanka} className='absolute top-0 right-0 pt-50'></img> */}
+    <div className='basis-1/4' >
+        <p className="text-black dark:text-white pt-10 pl-13"> Today's Match-------------------</p>
+        <img src={srilanka} className='absolute top-0 right-0 pt-50 pr-3'></img>
+        <div className='flex justify-between items-center pt-45 pl-13'>
+            <p className="text-black dark:text-white">Highlights-----------</p>
+        </div>
+        <div className='flex flex-row pl-10'>
+            <img src={india} className='h-50 mt-5 w-1/3 rounded-md mx-1'></img>
+            <img src={australia} className='h-50 mt-5 w-1/3 rounded-md mx-1'></img>
+            <img src={newzealand} className='h-50 mt-5 w-1/3 rounded-md mx-1'></img>
+        </div>
+    </div>
+        
     </div>
     
    
