@@ -116,11 +116,11 @@ const TableOne = () => {
             </div>
 
             <div className="flex items-center justify-center p-2.5 xl:p-5">
-              <p className="text-black dark:text-white">{brand.counrtyName}</p>
+              <p className=" text-black dark:text-white">{brand.counrtyName}</p>
             </div>
 
             <div className="flex items-center justify-center p-2.5 xl:p-5">
-              <p className="text-black dark:text-white">{brand.rank}</p>
+              <p className=" text-black dark:text-white">{brand.rank}</p>
             </div>
 
           </div>
@@ -128,7 +128,7 @@ const TableOne = () => {
       </div>
     </div>
     <div className='basis-1/4' >
-        <p className="text-black dark:text-white pt-10 pl-13"> Today's Match-------------------</p>
+        <p className="text-white dark:text-black pt-10 pl-13"> Today's Match-------------------</p>
         <img src={srilanka} className='absolute top-0 right-0 pt-50 pr-3'></img>
         <div className='flex justify-between items-center pt-45 pl-13'>
             <p className="text-black dark:text-white">Highlights-----------</p>
