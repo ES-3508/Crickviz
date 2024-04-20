@@ -8,10 +8,16 @@ import srilanka from '../../images/brand/srilanka.png';
 import india from '../../images/brand/india.png';
 import australia from '../../images/brand/australia.png';
 import newzealand from '../../images/brand/newzealand.png';
+// import genetic from '../../images/brand/genetic-data-svgrepo-com.svg'
+import sl from '../../images/brand/sl.svg';
+import ind from '../../images/brand/ind.svg';
+import aus from '../../images/brand/aus.svg';
+import pak from '../../images/brand/pak.svg';
+import newz from '../../images/brand/newz.svg';
 
 const brandData: BRAND[] = [
   {
-    logo: BrandOne,
+    logo: sl,
     counrtyName: 'Sri Lanka',
     rank: 1
     // name: 'Google',
@@ -21,7 +27,7 @@ const brandData: BRAND[] = [
     // conversion: 4.8,
   },
   {
-    logo: BrandTwo,
+    logo: ind,
     counrtyName: 'India',
     rank: 2
     // name: 'Twitter',
@@ -31,7 +37,7 @@ const brandData: BRAND[] = [
     // conversion: 4.3,
   },
   {
-    logo: BrandThree,
+    logo: pak,
     counrtyName: 'Pakistan',
     rank: 3
     // name: 'Github',
@@ -41,7 +47,7 @@ const brandData: BRAND[] = [
     // conversion: 3.7,
   },
   {
-    logo: BrandFour,
+    logo: aus,
     counrtyName: 'Australia',
     rank: 4
     // name: 'Vimeo',
@@ -52,7 +58,7 @@ const brandData: BRAND[] = [
   },
  
   {
-    logo: BrandFive,
+    logo: newz,
     counrtyName: 'Newzealand',
     rank: 5
     // name: 'Facebook',
@@ -128,7 +134,7 @@ const TableOne = () => {
       </div>
     </div>
     <div className='basis-1/4' >
-        <p className="text-white dark:text-black pt-10 pl-13"> Today's Match-------------------</p>
+        <p className="text-black dark:text-white pt-10 pl-13"> Today's Match-------------------</p>
         <img src={srilanka} className='absolute top-0 right-0 pt-50 pr-3'></img>
         <div className='flex justify-between items-center pt-45 pl-13'>
             <p className="text-black dark:text-white">Highlights-----------</p>
