@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import axios from 'axios';
 interface Option {
   value: string;
   text: string;
@@ -18,50 +18,53 @@ const MultiSelect: React.FC<DropdownProps> = ({ id }) => {
   const dropdownRef = useRef<any>(null);
   const trigger = useRef<any>(null);
 
+  const apiUrl = '/api/grounds';
   useEffect(() => {
-    const loadOptions = () => {
-      const select = document.getElementById(id) as HTMLSelectElement | null;
-      if (select) {
-        const newOptions: Option[] = [];
-        for (let i = 0; i < select.options.length; i++) {
-          newOptions.push({
-            value: select.options[i].value,
-            text: select.options[i].innerText,
-            selected: select.options[i].hasAttribute('selected'),
-          });
-        }
-        setOptions(newOptions);
+    const fetchGrounds = async () => {
+      try {
+        const response = await axios.get(apiUrl);
+        const grounds = response.data;
+
+        setOptions(
+          grounds.map((ground: any) => ({
+            value: ground,
+            text: ground,
+            selected: false,
+          })),
+        );
+      } catch (error) {
+        console.error('Error fetching grounds:', error);
       }
     };
 
-    loadOptions();
+    fetchGrounds();
   }, [id]);
 
-   const open = () => {
-     setShow(true);
-   };
+  const open = () => {
+    setShow(true);
+  };
 
-   const isOpen = () => {
-     return show === true;
-   };
+  const isOpen = () => {
+    return show === true;
+  };
 
- const select = (index: number, event: React.MouseEvent) => {
-   const newOptions = [...options];
+  const select = (index: number, event: React.MouseEvent) => {
+    const newOptions = [...options];
 
-   if (!newOptions[index].selected) {
-     newOptions[index].selected = true;
-     newOptions[index].element = event.currentTarget as HTMLElement;
-     setSelected([...selected, index]);
-   } else {
-     const selectedIndex = selected.indexOf(index);
-     if (selectedIndex !== -1) {
-       newOptions[index].selected = false;
-       setSelected(selected.filter((i) => i !== index));
-     }
-   }
+    if (!newOptions[index].selected) {
+      newOptions[index].selected = true;
+      newOptions[index].element = event.currentTarget as HTMLElement;
+      setSelected([...selected, index]);
+    } else {
+      const selectedIndex = selected.indexOf(index);
+      if (selectedIndex !== -1) {
+        newOptions[index].selected = false;
+        setSelected(selected.filter((i) => i !== index));
+      }
+    }
 
-   setOptions(newOptions);
- };
+    setOptions(newOptions);
+  };
 
   const remove = (index: number) => {
     const newOptions = [...options];
@@ -78,20 +81,20 @@ const MultiSelect: React.FC<DropdownProps> = ({ id }) => {
     return selected.map((option) => options[option].value);
   };
 
-    useEffect(() => {
-      const clickHandler = ({ target }: MouseEvent) => {
-        if (!dropdownRef.current) return;
-        if (
-          !show ||
-          dropdownRef.current.contains(target) ||
-          trigger.current.contains(target)
-        )
-          return;
-        setShow(false);
-      };
-      document.addEventListener('click', clickHandler);
-      return () => document.removeEventListener('click', clickHandler);
-    });
+  useEffect(() => {
+    const clickHandler = ({ target }: MouseEvent) => {
+      if (!dropdownRef.current) return;
+      if (
+        !show ||
+        dropdownRef.current.contains(target) ||
+        trigger.current.contains(target)
+      )
+        return;
+      setShow(false);
+    };
+    document.addEventListener('click', clickHandler);
+    return () => document.removeEventListener('click', clickHandler);
+  });
 
   return (
     <div className="relative z-50">
@@ -99,11 +102,13 @@ const MultiSelect: React.FC<DropdownProps> = ({ id }) => {
         {/* Multiselect Dropdown */}
       </label>
       <div>
+        {/* Select the options from the map */}
         <select className="hidden" id={id}>
-          <option value="1">Sugathadasa Ground</option>
-          <option value="2">Menchester Ground</option>
-          <option value="3">Urban Council Ground</option>
-          <option value="4">National Ground</option>
+          {options.map((option, index) => (
+            <option key={index} value={option.value}>
+              {option.text}
+            </option>
+          ))}
         </select>
 
         <div className="flex flex-col items-center">
