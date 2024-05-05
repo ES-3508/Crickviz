@@ -1,84 +1,39 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
+
 interface Option {
   value: string;
   text: string;
   selected: boolean;
-  element?: HTMLElement;
 }
 
 interface DropdownProps {
-  id: string;
+  // id: string;
+  options: Option[];
 }
 
-const MultiSelect: React.FC<DropdownProps> = ({ id }) => {
-  const [options, setOptions] = useState<Option[]>([]);
-  const [selected, setSelected] = useState<number[]>([]);
+const MultiSelect: React.FC<DropdownProps> = ({ options }) => {
+  const [selected, setSelected] = useState<string[]>([]);
   const [show, setShow] = useState(false);
-  const dropdownRef = useRef<any>(null);
-  const trigger = useRef<any>(null);
-
-  const apiUrl = '/api/grounds';
-  useEffect(() => {
-    const fetchGrounds = async () => {
-      try {
-        const response = await axios.get(apiUrl);
-        const grounds = response.data;
-
-        setOptions(
-          grounds.map((ground: any) => ({
-            value: ground,
-            text: ground,
-            selected: false,
-          })),
-        );
-      } catch (error) {
-        console.error('Error fetching grounds:', error);
-      }
-    };
-
-    fetchGrounds();
-  }, [id]);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const trigger = useRef<HTMLDivElement>(null);
 
   const open = () => {
     setShow(true);
   };
 
   const isOpen = () => {
-    return show === true;
+    return show;
   };
 
-  const select = (index: number, event: React.MouseEvent) => {
-    const newOptions = [...options];
-
-    if (!newOptions[index].selected) {
-      newOptions[index].selected = true;
-      newOptions[index].element = event.currentTarget as HTMLElement;
-      setSelected([...selected, index]);
-    } else {
-      const selectedIndex = selected.indexOf(index);
-      if (selectedIndex !== -1) {
-        newOptions[index].selected = false;
-        setSelected(selected.filter((i) => i !== index));
-      }
-    }
-
-    setOptions(newOptions);
-  };
-
-  const remove = (index: number) => {
-    const newOptions = [...options];
-    const selectedIndex = selected.indexOf(index);
-
-    if (selectedIndex !== -1) {
-      newOptions[index].selected = false;
-      setSelected(selected.filter((i) => i !== index));
-      setOptions(newOptions);
+  const select = (value: string) => {
+    if (!selected.includes(value)) {
+      setSelected([...selected, value]);
     }
   };
 
-  const selectedValues = () => {
-    return selected.map((option) => options[option].value);
+  const remove = (value: string) => {
+    setSelected(selected.filter((item) => item !== value));
   };
 
   useEffect(() => {
@@ -86,54 +41,38 @@ const MultiSelect: React.FC<DropdownProps> = ({ id }) => {
       if (!dropdownRef.current) return;
       if (
         !show ||
-        dropdownRef.current.contains(target) ||
-        trigger.current.contains(target)
-      )
-        return;
+        dropdownRef.current.contains(target as Node) ||
+        trigger.current?.contains(target as Node)
+      ) return;
       setShow(false);
     };
     document.addEventListener('click', clickHandler);
     return () => document.removeEventListener('click', clickHandler);
-  });
+  }, [show]);
 
   return (
     <div className="relative z-50">
-      <label className="mb-3 block text-sm font-medium text-black dark:text-white">
-        {/* Multiselect Dropdown */}
-      </label>
       <div>
-        {/* Select the options from the map */}
-        <select className="hidden" id={id}>
-          {options.map((option, index) => (
-            <option key={index} value={option.value}>
-              {option.text}
-            </option>
-          ))}
-        </select>
-
         <div className="flex flex-col items-center">
-          <input name="values" type="hidden" defaultValue={selectedValues()} />
+          <input name="values" type="hidden" value={selected.join(',')} />
           <div className="relative z-20 inline-block w-full">
             <div className="relative flex flex-col items-center">
               <div ref={trigger} onClick={open} className="w-full">
-                <div className="mb-2 flex rounded border border-stroke py-2 pl-3 pr-3 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input">
+                <div className="mb-2 flex rounded border border-blue-300 py-2 pl-3 pr-3 outline-none transition focus:border-blue-200 active:border-blue-200 dark:border-form-strokedark dark:bg-form-input">
                   <div className="flex flex-auto flex-wrap gap-3">
-                    {selected.map((index) => (
+                    {selected.map((value, index) => (
                       <div
                         key={index}
-                        className="my-1.5 flex items-center justify-center rounded border-[.5px] border-stroke bg-gray px-2.5 py-1.5 text-sm font-medium dark:border-strokedark dark:bg-white/30"
+                        className="my-1.5 flex items-center justify-center rounded border-[.5px] border-stroke bg-blue-500 px-2.5 py-1.5 text-sm font-medium text-white dark:bg-white dark:text-black"
+                        onClick={() => remove(value)}
                       >
                         <div className="max-w-full flex-initial">
-                          {options[index].text}
+                          {options.find((opt) => opt.value === value)?.text}
                         </div>
                         <div className="flex flex-auto flex-row-reverse">
-                          <div
-                            onClick={() => remove(index)}
-                            className="cursor-pointer pl-2 hover:text-danger"
-                          >
+                          <div className="cursor-pointer pl-2">
                             <svg
                               className="fill-current"
-                              role="button"
                               width="12"
                               height="12"
                               viewBox="0 0 12 12"
@@ -155,35 +94,12 @@ const MultiSelect: React.FC<DropdownProps> = ({ id }) => {
                       <div className="flex-1">
                         <input
                           placeholder="Select an option"
+                          readOnly
+                          onClick={open}
                           className="h-full w-full appearance-none bg-transparent p-1 px-2 outline-none"
-                          defaultValue={selectedValues()}
                         />
                       </div>
                     )}
-                  </div>
-                  <div className="flex w-8 items-center py-1 pl-1 pr-1">
-                    <button
-                      type="button"
-                      onClick={open}
-                      className="h-6 w-6 cursor-pointer outline-none focus:outline-none"
-                    >
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g opacity="0.8">
-                          <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z"
-                            fill="#637381"
-                          ></path>
-                        </g>
-                      </svg>
-                    </button>
                   </div>
                 </div>
               </div>
@@ -201,11 +117,11 @@ const MultiSelect: React.FC<DropdownProps> = ({ id }) => {
                       <div key={index}>
                         <div
                           className="w-full cursor-pointer rounded-t border-b border-stroke hover:bg-primary/5 dark:border-form-strokedark"
-                          onClick={(event) => select(index, event)}
+                          onClick={() => select(option.value)}
                         >
                           <div
                             className={`relative flex w-full items-center border-l-2 border-transparent p-2 pl-2 ${
-                              option.selected ? 'border-primary' : ''
+                              selected.includes(option.value) ? 'border-primary' : ''
                             }`}
                           >
                             <div className="flex w-full items-center">

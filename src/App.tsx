@@ -17,6 +17,7 @@ import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import Home from './pages/Home';
 import Player from './components/Player/Player';
+import Bowlers from './components/Bowlers/Bowlers';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -27,13 +28,13 @@ function App() {
   }, [pathname]);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
+    setTimeout(() => setLoading(false), 50);
   }, []);
 
   return loading ? (
     <Loader />
   ) : (
-    <>
+    <div className="bg-blue-100">
       <Routes>
         <Route
           index
@@ -70,6 +71,26 @@ function App() {
             <>
               <PageTitle title="Player | TailAdmin - Tailwind CSS Admin Dashboard Template" />
               <Player />
+            </>
+          }
+        />
+
+<Route
+          path="/bowlers"
+          element={
+            <>
+              <PageTitle title="Bowlers" />
+              <Bowlers/>
+            </>
+          }
+        />
+
+<Route
+          path="/batmens"
+          element={
+            <>
+              <PageTitle title="Batmens" />
+              <Bowlers/>
             </>
           }
         />
@@ -166,7 +187,7 @@ function App() {
           }
         />
       </Routes>
-    </>
+    </div>
   );
 }
 
