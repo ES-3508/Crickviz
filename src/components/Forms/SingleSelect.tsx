@@ -6,13 +6,13 @@ interface Option {
   selected: boolean;
 }
 
-interface MultiSelectProps {
+interface SingleSelectProps {
   options: Option[];
-  selectedOptions: string[];
-  setSelectedOptions: React.Dispatch<React.SetStateAction<string[]>>;
+  selectedOption: string | null;
+  setSelectedOption: React.Dispatch<React.SetStateAction<string | null>>;
 }
 
-const MultiSelect: React.FC<MultiSelectProps> = ({ options, selectedOptions, setSelectedOptions }) => {
+const SingleSelect: React.FC<SingleSelectProps> = ({ options, selectedOption, setSelectedOption }) => {
   const [show, setShow] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -27,13 +27,8 @@ const MultiSelect: React.FC<MultiSelectProps> = ({ options, selectedOptions, set
   };
 
   const select = (value: string) => {
-    if (!selectedOptions.includes(value)) {
-      setSelectedOptions([...selectedOptions, value]);
-    }
-  };
-
-  const remove = (value: string) => {
-    setSelectedOptions(selectedOptions.filter((item) => item !== value));
+    setSelectedOption(value);
+    setShow(false);
   };
 
   useEffect(() => {
@@ -58,52 +53,38 @@ const MultiSelect: React.FC<MultiSelectProps> = ({ options, selectedOptions, set
     <div className="relative z-50">
       <div>
         <div className="flex flex-col items-center">
-          <input name="values" type="hidden" value={selectedOptions.join(',')} />
+          <input name="value" type="hidden" value={selectedOption || ''} />
           <div className="relative z-20 inline-block w-full">
             <div className="relative flex flex-col items-center">
               <div ref={trigger} onClick={open} className="w-full">
                 <div className="mb-2 flex rounded border border-blue-300 py-2 pl-3 pr-3 outline-none transition focus:border-blue-200 active:border-blue-200 dark:border-form-strokedark dark:bg-form-input">
                   <div className="flex flex-auto flex-wrap gap-3">
-                    {selectedOptions.map((value, index) => (
-                      <div
-                        key={index}
-                        className="my-1.5 flex items-center justify-center rounded border-[.5px] border-stroke bg-blue-500 px-2.5 py-1.5 text-sm font-medium text-white dark:bg-white dark:text-black"
-                        onClick={() => remove(value)}
+                    <div className="flex-1">
+                      <input
+                        placeholder="Select an option"
+                        readOnly
+                        onClick={open}
+                        value={selectedOption ? options.find(opt => opt.value === selectedOption)?.text : ''}
+                        className="h-full w-full appearance-none bg-transparent p-1 px-2 outline-none"
+                      />
+                    </div>
+                    <div className="flex-initial">
+                      <svg
+                        className="fill-current"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <div className="max-w-full flex-initial">
-                          {options.find((opt) => opt.value === value)?.text}
-                        </div>
-                        <div className="flex flex-auto flex-row-reverse">
-                          <div className="cursor-pointer pl-2">
-                            <svg
-                              className="fill-current"
-                              width="12"
-                              height="12"
-                              viewBox="0 0 12 12"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                clipRule="evenodd"
-                                d="M9.35355 3.35355C9.54882 3.15829 9.54882 2.84171 9.35355 2.64645C9.15829 2.45118 8.84171 2.45118 8.64645 2.64645L6 5.29289L3.35355 2.64645C3.15829 2.45118 2.84171 2.45118 2.64645 2.64645C2.45118 2.84171 2.45118 3.15829 2.64645 3.35355L5.29289 6L2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L6 6.70711L8.64645 9.35355C8.84171 9.54882 9.15829 9.54882 9.35355 9.35355C9.54882 9.15829 9.54882 8.84171 9.35355 8.64645L6.70711 6L9.35355 3.35355Z"
-                                fill="currentColor"
-                              ></path>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                    {selectedOptions.length === 0 && (
-                      <div className="flex-1">
-                        <input
-                          placeholder="Select an option"
-                          readOnly
-                          onClick={open}
-                          className="h-full w-full appearance-none bg-transparent p-1 px-2 outline-none"
-                        />
-                      </div>
-                    )}
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M9.35355 3.35355C9.54882 3.15829 9.54882 2.84171 9.35355 2.64645C9.15829 2.45118 8.84171 2.45118 8.64645 2.64645L6 5.29289L3.35355 2.64645C3.15829 2.45118 2.84171 2.45118 2.64645 2.64645C2.45118 2.84171 2.45118 3.15829 2.64645 3.35355L5.29289 6L2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L6 6.70711L8.64645 9.35355C8.84171 9.54882 9.15829 9.54882 9.35355 9.35355C9.54882 9.15829 9.54882 8.84171 9.35355 8.64645L6.70711 6L9.35355 3.35355Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -135,7 +116,7 @@ const MultiSelect: React.FC<MultiSelectProps> = ({ options, selectedOptions, set
                         >
                           <div
                             className={`relative flex w-full items-center border-l-2 border-transparent p-2 pl-2 ${
-                              selectedOptions.includes(option.value) ? 'border-primary' : ''
+                              selectedOption === option.value ? 'border-primary' : ''
                             }`}
                           >
                             <div className="flex w-full items-center">
@@ -163,4 +144,4 @@ const MultiSelect: React.FC<MultiSelectProps> = ({ options, selectedOptions, set
   );
 };
 
-export default MultiSelect;
+export default SingleSelect;

@@ -1,0 +1,2255 @@
+{
+  "xlabel": "Date",
+  "ylabel": "strike_rate",
+  "title": "Player predicted performance interconnection with strike_rate",
+  "legend": [
+    "Angelo Mathews",
+    "Predicted Performance",
+    "Dasun Shanaka",
+    "Predicted Performance",
+    "Kusal Mendis",
+    "Predicted Performance"
+  ],
+  "x_values": [
+    "2008-01-01",
+    "2010-01-01",
+    "2012-01-01",
+    "2014-01-01",
+    "2016-01-01",
+    "2018-01-01",
+    "2020-01-01",
+    "2022-01-01",
+    "2024-01-01"
+  ],
+  "y_values": [
+    -50.0, 0.0, 50.0, 100.0, 150.0, 200.0, 250.0, 300.0, 350.0, 400.0
+  ],
+  "player_details": {
+    "Angelo Mathews": [
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-06-10",
+        "runs": 3,
+        "balls": 2,
+        "strike_rate": 150.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 3.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-06-12",
+        "runs": 9,
+        "balls": 8,
+        "strike_rate": 112.5,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 9.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-06-14",
+        "runs": 10,
+        "balls": 7,
+        "strike_rate": 142.85,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 10.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-06-16",
+        "runs": 6,
+        "balls": 4,
+        "strike_rate": 150.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 6.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-06-19",
+        "runs": 12,
+        "balls": 4,
+        "strike_rate": 300.0,
+        "fours": 1,
+        "sixes": 1,
+        "predicted_runs": 12.02
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-06-21",
+        "runs": 35,
+        "balls": 24,
+        "strike_rate": 145.83,
+        "fours": 3,
+        "sixes": 1,
+        "predicted_runs": 35.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-08-12",
+        "runs": 9,
+        "balls": 9,
+        "strike_rate": 100.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 9.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-09-02",
+        "runs": 21,
+        "balls": 22,
+        "strike_rate": 95.45,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 21.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-09-04",
+        "runs": 1,
+        "balls": 2,
+        "strike_rate": 50.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-12-09",
+        "runs": 15,
+        "balls": 4,
+        "strike_rate": 375.0,
+        "fours": 0,
+        "sixes": 2,
+        "predicted_runs": 14.74
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2009-12-12",
+        "runs": 26,
+        "balls": 13,
+        "strike_rate": 200.0,
+        "fours": 1,
+        "sixes": 2,
+        "predicted_runs": 26.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2010-04-30",
+        "runs": 3,
+        "balls": 6,
+        "strike_rate": 50.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 3.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2010-05-03",
+        "runs": 4,
+        "balls": 6,
+        "strike_rate": 66.66,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 4.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2010-05-09",
+        "runs": 8,
+        "balls": 4,
+        "strike_rate": 200.0,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 8.02
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2010-05-11",
+        "runs": 46,
+        "balls": 37,
+        "strike_rate": 124.32,
+        "fours": 3,
+        "sixes": 2,
+        "predicted_runs": 46.1
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2010-05-13",
+        "runs": 58,
+        "balls": 45,
+        "strike_rate": 128.88,
+        "fours": 3,
+        "sixes": 1,
+        "predicted_runs": 58.01
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2010-05-22",
+        "runs": 27,
+        "balls": 31,
+        "strike_rate": 87.09,
+        "fours": 1,
+        "sixes": 1,
+        "predicted_runs": 27.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2010-05-23",
+        "runs": 0,
+        "balls": 4,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2011-08-08",
+        "runs": 5,
+        "balls": 4,
+        "strike_rate": 125.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 5.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2011-11-25",
+        "runs": 14,
+        "balls": 20,
+        "strike_rate": 70.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 14.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2012-06-01",
+        "runs": 9,
+        "balls": 25,
+        "strike_rate": 36.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 9.23
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2012-06-03",
+        "runs": 11,
+        "balls": 11,
+        "strike_rate": 100.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 11.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2012-08-07",
+        "runs": 31,
+        "balls": 29,
+        "strike_rate": 106.89,
+        "fours": 3,
+        "sixes": 0,
+        "predicted_runs": 31.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2012-09-27",
+        "runs": 12,
+        "balls": 11,
+        "strike_rate": 109.09,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 12.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2012-10-01",
+        "runs": 28,
+        "balls": 19,
+        "strike_rate": 147.36,
+        "fours": 3,
+        "sixes": 1,
+        "predicted_runs": 28.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2012-10-04",
+        "runs": 10,
+        "balls": 6,
+        "strike_rate": 166.66,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 10.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2012-10-07",
+        "runs": 1,
+        "balls": 5,
+        "strike_rate": 20.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2013-01-26",
+        "runs": 35,
+        "balls": 27,
+        "strike_rate": 129.62,
+        "fours": 3,
+        "sixes": 1,
+        "predicted_runs": 35.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2013-03-31",
+        "runs": 30,
+        "balls": 27,
+        "strike_rate": 111.11,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 30.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2013-08-02",
+        "runs": 4,
+        "balls": 7,
+        "strike_rate": 57.14,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 4.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2013-08-04",
+        "runs": 1,
+        "balls": 3,
+        "strike_rate": 33.33,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2013-08-06",
+        "runs": 14,
+        "balls": 10,
+        "strike_rate": 140.0,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 14.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2013-12-11",
+        "runs": 50,
+        "balls": 34,
+        "strike_rate": 147.05,
+        "fours": 5,
+        "sixes": 1,
+        "predicted_runs": 49.99
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2014-02-12",
+        "runs": 11,
+        "balls": 11,
+        "strike_rate": 100.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 11.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2014-02-14",
+        "runs": 2,
+        "balls": 3,
+        "strike_rate": 66.66,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 2.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2014-03-22",
+        "runs": 43,
+        "balls": 32,
+        "strike_rate": 134.37,
+        "fours": 3,
+        "sixes": 1,
+        "predicted_runs": 43.07
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2014-03-27",
+        "runs": 11,
+        "balls": 5,
+        "strike_rate": 220.0,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 11.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2014-03-31",
+        "runs": 6,
+        "balls": 10,
+        "strike_rate": 60.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 6.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2014-04-03",
+        "runs": 40,
+        "balls": 23,
+        "strike_rate": 173.91,
+        "fours": 3,
+        "sixes": 2,
+        "predicted_runs": 40.06
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2014-05-20",
+        "runs": 13,
+        "balls": 13,
+        "strike_rate": 100.0,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 13.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2015-07-30",
+        "runs": 23,
+        "balls": 26,
+        "strike_rate": 88.46,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 23.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2015-11-09",
+        "runs": 37,
+        "balls": 13,
+        "strike_rate": 284.61,
+        "fours": 2,
+        "sixes": 4,
+        "predicted_runs": 36.51
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2015-11-11",
+        "runs": 5,
+        "balls": 6,
+        "strike_rate": 83.33,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 5.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2016-01-07",
+        "runs": 4,
+        "balls": 5,
+        "strike_rate": 80.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 4.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2016-01-10",
+        "runs": 81,
+        "balls": 49,
+        "strike_rate": 165.3,
+        "fours": 7,
+        "sixes": 4,
+        "predicted_runs": 81.15
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2016-02-25",
+        "runs": 8,
+        "balls": 9,
+        "strike_rate": 88.88,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 8.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2016-02-28",
+        "runs": 12,
+        "balls": 20,
+        "strike_rate": 60.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 12.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2016-03-01",
+        "runs": 18,
+        "balls": 19,
+        "strike_rate": 94.73,
+        "fours": 3,
+        "sixes": 0,
+        "predicted_runs": 18.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2016-03-17",
+        "runs": 21,
+        "balls": 10,
+        "strike_rate": 210.0,
+        "fours": 3,
+        "sixes": 1,
+        "predicted_runs": 21.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2016-03-20",
+        "runs": 20,
+        "balls": 32,
+        "strike_rate": 62.5,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 19.94
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2016-03-26",
+        "runs": 73,
+        "balls": 54,
+        "strike_rate": 135.18,
+        "fours": 3,
+        "sixes": 5,
+        "predicted_runs": 73.29
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2016-07-05",
+        "runs": 11,
+        "balls": 10,
+        "strike_rate": 110.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 11.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2017-01-20",
+        "runs": 6,
+        "balls": 8,
+        "strike_rate": 75.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 6.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2017-01-22",
+        "runs": 54,
+        "balls": 50,
+        "strike_rate": 108.0,
+        "fours": 1,
+        "sixes": 3,
+        "predicted_runs": 54.06
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2017-09-06",
+        "runs": 7,
+        "balls": 5,
+        "strike_rate": 140.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 7.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2017-12-20",
+        "runs": 1,
+        "balls": 7,
+        "strike_rate": 14.28,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2018-08-14",
+        "runs": 0,
+        "balls": 3,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2020-01-10",
+        "runs": 31,
+        "balls": 20,
+        "strike_rate": 155.0,
+        "fours": 1,
+        "sixes": 3,
+        "predicted_runs": 31.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2020-03-04",
+        "runs": 10,
+        "balls": 8,
+        "strike_rate": 125.0,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 10.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2020-03-06",
+        "runs": 23,
+        "balls": 22,
+        "strike_rate": 104.54,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 23.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2021-03-03",
+        "runs": 5,
+        "balls": 6,
+        "strike_rate": 83.33,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 5.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2021-03-05",
+        "runs": 13,
+        "balls": 15,
+        "strike_rate": 86.66,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 13.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2021-03-07",
+        "runs": 11,
+        "balls": 11,
+        "strike_rate": 100.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 11.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2024-01-14",
+        "runs": 46,
+        "balls": 38,
+        "strike_rate": 121.05,
+        "fours": 5,
+        "sixes": 1,
+        "predicted_runs": 46.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2024-01-16",
+        "runs": 66,
+        "balls": 51,
+        "strike_rate": 129.41,
+        "fours": 6,
+        "sixes": 2,
+        "predicted_runs": 66.03
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2024-02-17",
+        "runs": 6,
+        "balls": 6,
+        "strike_rate": 100.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 6.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2024-02-19",
+        "runs": 42,
+        "balls": 22,
+        "strike_rate": 190.9,
+        "fours": 2,
+        "sixes": 4,
+        "predicted_runs": 42.21
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2024-02-21",
+        "runs": 4,
+        "balls": 5,
+        "strike_rate": 80.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 4.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2024-03-06",
+        "runs": 32,
+        "balls": 21,
+        "strike_rate": 152.38,
+        "fours": 4,
+        "sixes": 0,
+        "predicted_runs": 32.0
+      },
+      {
+        "player": "Angelo Mathews",
+        "date": "2024-03-09",
+        "runs": 10,
+        "balls": 7,
+        "strike_rate": 142.85,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 10.0
+      }
+    ],
+    "Dasun Shanaka": [
+      {
+        "player": "Dasun Shanaka",
+        "date": "2015-08-01",
+        "runs": 7,
+        "balls": 4,
+        "strike_rate": 175.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 7.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2016-02-09",
+        "runs": 3,
+        "balls": 8,
+        "strike_rate": 37.5,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 3.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2016-02-12",
+        "runs": 27,
+        "balls": 18,
+        "strike_rate": 150.0,
+        "fours": 0,
+        "sixes": 3,
+        "predicted_runs": 27.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2016-02-14",
+        "runs": 19,
+        "balls": 24,
+        "strike_rate": 79.16,
+        "fours": 1,
+        "sixes": 2,
+        "predicted_runs": 19.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2016-02-25",
+        "runs": 5,
+        "balls": 11,
+        "strike_rate": 45.45,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 5.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2016-02-28",
+        "runs": 14,
+        "balls": 14,
+        "strike_rate": 100.0,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 14.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2016-03-01",
+        "runs": 1,
+        "balls": 4,
+        "strike_rate": 25.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2016-03-04",
+        "runs": 0,
+        "balls": 2,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2016-03-26",
+        "runs": 15,
+        "balls": 9,
+        "strike_rate": 166.66,
+        "fours": 2,
+        "sixes": 1,
+        "predicted_runs": 15.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2016-03-28",
+        "runs": 20,
+        "balls": 18,
+        "strike_rate": 111.11,
+        "fours": 1,
+        "sixes": 1,
+        "predicted_runs": 20.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2016-07-05",
+        "runs": 1,
+        "balls": 1,
+        "strike_rate": 100.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2017-02-22",
+        "runs": 0,
+        "balls": 2,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2017-09-06",
+        "runs": 0,
+        "balls": 3,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2017-10-26",
+        "runs": 0,
+        "balls": 3,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2017-10-27",
+        "runs": 1,
+        "balls": 3,
+        "strike_rate": 33.33,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2017-10-29",
+        "runs": 54,
+        "balls": 36,
+        "strike_rate": 150.0,
+        "fours": 5,
+        "sixes": 3,
+        "predicted_runs": 53.8
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2017-12-20",
+        "runs": 1,
+        "balls": 6,
+        "strike_rate": 16.66,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2017-12-24",
+        "runs": 29,
+        "balls": 24,
+        "strike_rate": 120.83,
+        "fours": 0,
+        "sixes": 2,
+        "predicted_runs": 29.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2018-02-15",
+        "runs": 42,
+        "balls": 24,
+        "strike_rate": 175.0,
+        "fours": 3,
+        "sixes": 3,
+        "predicted_runs": 41.99
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2018-02-18",
+        "runs": 30,
+        "balls": 11,
+        "strike_rate": 272.72,
+        "fours": 5,
+        "sixes": 1,
+        "predicted_runs": 29.9
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2018-03-06",
+        "runs": 15,
+        "balls": 18,
+        "strike_rate": 83.33,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 15.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2018-03-10",
+        "runs": 0,
+        "balls": 2,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2018-03-12",
+        "runs": 19,
+        "balls": 16,
+        "strike_rate": 118.75,
+        "fours": 1,
+        "sixes": 1,
+        "predicted_runs": 19.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2018-03-16",
+        "runs": 0,
+        "balls": 1,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2018-08-14",
+        "runs": 16,
+        "balls": 16,
+        "strike_rate": 100.0,
+        "fours": 3,
+        "sixes": 0,
+        "predicted_runs": 16.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2018-10-27",
+        "runs": 10,
+        "balls": 13,
+        "strike_rate": 76.92,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 10.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2019-01-11",
+        "runs": 7,
+        "balls": 5,
+        "strike_rate": 140.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 7.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2019-09-01",
+        "runs": 17,
+        "balls": 12,
+        "strike_rate": 141.66,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 17.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2019-09-03",
+        "runs": 0,
+        "balls": 1,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2019-09-06",
+        "runs": 7,
+        "balls": 6,
+        "strike_rate": 116.66,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 7.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2019-10-05",
+        "runs": 17,
+        "balls": 10,
+        "strike_rate": 170.0,
+        "fours": 0,
+        "sixes": 2,
+        "predicted_runs": 17.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2019-10-07",
+        "runs": 27,
+        "balls": 15,
+        "strike_rate": 180.0,
+        "fours": 3,
+        "sixes": 1,
+        "predicted_runs": 27.01
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2019-10-09",
+        "runs": 12,
+        "balls": 25,
+        "strike_rate": 48.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 12.02
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2019-10-27",
+        "runs": 17,
+        "balls": 18,
+        "strike_rate": 94.44,
+        "fours": 1,
+        "sixes": 1,
+        "predicted_runs": 17.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2019-10-30",
+        "runs": 1,
+        "balls": 3,
+        "strike_rate": 33.33,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2020-01-07",
+        "runs": 7,
+        "balls": 8,
+        "strike_rate": 87.5,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 7.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2020-01-10",
+        "runs": 9,
+        "balls": 9,
+        "strike_rate": 100.0,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 9.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2020-03-04",
+        "runs": 2,
+        "balls": 8,
+        "strike_rate": 25.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 2.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2020-03-06",
+        "runs": 31,
+        "balls": 24,
+        "strike_rate": 129.16,
+        "fours": 3,
+        "sixes": 1,
+        "predicted_runs": 31.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-06-23",
+        "runs": 50,
+        "balls": 44,
+        "strike_rate": 113.63,
+        "fours": 3,
+        "sixes": 2,
+        "predicted_runs": 49.83
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-06-24",
+        "runs": 8,
+        "balls": 14,
+        "strike_rate": 57.14,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 8.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-06-26",
+        "runs": 7,
+        "balls": 15,
+        "strike_rate": 46.66,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 7.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-07-25",
+        "runs": 16,
+        "balls": 14,
+        "strike_rate": 114.28,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 16.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-07-28",
+        "runs": 3,
+        "balls": 6,
+        "strike_rate": 50.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 3.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-09-10",
+        "runs": 16,
+        "balls": 14,
+        "strike_rate": 114.28,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 16.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-09-12",
+        "runs": 10,
+        "balls": 8,
+        "strike_rate": 125.0,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 10.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-09-14",
+        "runs": 18,
+        "balls": 26,
+        "strike_rate": 69.23,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 18.02
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-10-20",
+        "runs": 21,
+        "balls": 11,
+        "strike_rate": 190.9,
+        "fours": 2,
+        "sixes": 1,
+        "predicted_runs": 21.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-10-24",
+        "runs": 1,
+        "balls": 1,
+        "strike_rate": 100.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-10-28",
+        "runs": 12,
+        "balls": 19,
+        "strike_rate": 63.15,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 12.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-10-30",
+        "runs": 11,
+        "balls": 12,
+        "strike_rate": 91.66,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 11.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-11-01",
+        "runs": 26,
+        "balls": 25,
+        "strike_rate": 104.0,
+        "fours": 2,
+        "sixes": 1,
+        "predicted_runs": 26.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2021-11-04",
+        "runs": 25,
+        "balls": 14,
+        "strike_rate": 178.57,
+        "fours": 2,
+        "sixes": 1,
+        "predicted_runs": 25.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-02-11",
+        "runs": 7,
+        "balls": 13,
+        "strike_rate": 53.84,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 7.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-02-13",
+        "runs": 34,
+        "balls": 19,
+        "strike_rate": 178.94,
+        "fours": 2,
+        "sixes": 3,
+        "predicted_runs": 33.96
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-02-15",
+        "runs": 39,
+        "balls": 38,
+        "strike_rate": 102.63,
+        "fours": 5,
+        "sixes": 0,
+        "predicted_runs": 38.94
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-02-18",
+        "runs": 1,
+        "balls": 4,
+        "strike_rate": 25.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-02-20",
+        "runs": 35,
+        "balls": 31,
+        "strike_rate": 112.9,
+        "fours": 0,
+        "sixes": 2,
+        "predicted_runs": 35.26
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-02-24",
+        "runs": 3,
+        "balls": 6,
+        "strike_rate": 50.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 3.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-02-26",
+        "runs": 47,
+        "balls": 19,
+        "strike_rate": 247.36,
+        "fours": 2,
+        "sixes": 5,
+        "predicted_runs": 47.19
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-02-27",
+        "runs": 74,
+        "balls": 38,
+        "strike_rate": 194.73,
+        "fours": 9,
+        "sixes": 2,
+        "predicted_runs": 74.04
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-06-07",
+        "runs": 0,
+        "balls": 2,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-06-08",
+        "runs": 14,
+        "balls": 17,
+        "strike_rate": 82.35,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 14.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-06-11",
+        "runs": 54,
+        "balls": 25,
+        "strike_rate": 216.0,
+        "fours": 5,
+        "sixes": 4,
+        "predicted_runs": 54.14
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-08-27",
+        "runs": 0,
+        "balls": 1,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-09-01",
+        "runs": 45,
+        "balls": 33,
+        "strike_rate": 136.36,
+        "fours": 3,
+        "sixes": 2,
+        "predicted_runs": 44.85
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-09-03",
+        "runs": 10,
+        "balls": 9,
+        "strike_rate": 111.11,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 10.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-09-06",
+        "runs": 33,
+        "balls": 18,
+        "strike_rate": 183.33,
+        "fours": 4,
+        "sixes": 1,
+        "predicted_runs": 32.99
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-09-09",
+        "runs": 21,
+        "balls": 16,
+        "strike_rate": 131.25,
+        "fours": 1,
+        "sixes": 2,
+        "predicted_runs": 21.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-09-11",
+        "runs": 2,
+        "balls": 3,
+        "strike_rate": 66.66,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 2.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-10-16",
+        "runs": 29,
+        "balls": 23,
+        "strike_rate": 126.08,
+        "fours": 2,
+        "sixes": 1,
+        "predicted_runs": 29.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-10-18",
+        "runs": 0,
+        "balls": 1,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-10-20",
+        "runs": 8,
+        "balls": 5,
+        "strike_rate": 160.0,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 8.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-10-25",
+        "runs": 3,
+        "balls": 5,
+        "strike_rate": 60.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 3.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-10-29",
+        "runs": 35,
+        "balls": 32,
+        "strike_rate": 109.37,
+        "fours": 4,
+        "sixes": 1,
+        "predicted_runs": 35.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2022-11-05",
+        "runs": 3,
+        "balls": 8,
+        "strike_rate": 37.5,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 3.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2023-01-03",
+        "runs": 45,
+        "balls": 27,
+        "strike_rate": 166.66,
+        "fours": 3,
+        "sixes": 3,
+        "predicted_runs": 45.02
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2023-01-05",
+        "runs": 56,
+        "balls": 22,
+        "strike_rate": 254.54,
+        "fours": 2,
+        "sixes": 6,
+        "predicted_runs": 56.2
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2023-01-07",
+        "runs": 23,
+        "balls": 17,
+        "strike_rate": 135.29,
+        "fours": 0,
+        "sixes": 2,
+        "predicted_runs": 23.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2023-04-02",
+        "runs": 1,
+        "balls": 3,
+        "strike_rate": 33.33,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2023-04-05",
+        "runs": 7,
+        "balls": 8,
+        "strike_rate": 87.5,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 7.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2023-04-08",
+        "runs": 15,
+        "balls": 8,
+        "strike_rate": 187.5,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 15.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2024-01-14",
+        "runs": 26,
+        "balls": 18,
+        "strike_rate": 144.44,
+        "fours": 4,
+        "sixes": 0,
+        "predicted_runs": 26.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2024-01-16",
+        "runs": 9,
+        "balls": 4,
+        "strike_rate": 225.0,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 8.95
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2024-02-17",
+        "runs": 6,
+        "balls": 4,
+        "strike_rate": 150.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 6.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2024-02-21",
+        "runs": 13,
+        "balls": 8,
+        "strike_rate": 162.5,
+        "fours": 1,
+        "sixes": 1,
+        "predicted_runs": 13.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2024-03-06",
+        "runs": 20,
+        "balls": 18,
+        "strike_rate": 111.11,
+        "fours": 1,
+        "sixes": 1,
+        "predicted_runs": 20.0
+      },
+      {
+        "player": "Dasun Shanaka",
+        "date": "2024-03-09",
+        "runs": 19,
+        "balls": 9,
+        "strike_rate": 211.11,
+        "fours": 2,
+        "sixes": 1,
+        "predicted_runs": 19.0
+      }
+    ],
+    "Kusal Mendis": [
+      {
+        "player": "Kusal Mendis",
+        "date": "2016-07-05",
+        "runs": 21,
+        "balls": 16,
+        "strike_rate": 131.25,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 21.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2016-09-06",
+        "runs": 22,
+        "balls": 13,
+        "strike_rate": 169.23,
+        "fours": 2,
+        "sixes": 2,
+        "predicted_runs": 22.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2016-09-09",
+        "runs": 5,
+        "balls": 7,
+        "strike_rate": 71.42,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 5.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2017-01-20",
+        "runs": 1,
+        "balls": 2,
+        "strike_rate": 50.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2017-01-22",
+        "runs": 4,
+        "balls": 2,
+        "strike_rate": 200.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 4.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2017-01-25",
+        "runs": 2,
+        "balls": 3,
+        "strike_rate": 66.66,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 2.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2017-02-19",
+        "runs": 5,
+        "balls": 7,
+        "strike_rate": 71.42,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 5.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2017-02-22",
+        "runs": 14,
+        "balls": 10,
+        "strike_rate": 140.0,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 14.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2018-02-15",
+        "runs": 53,
+        "balls": 27,
+        "strike_rate": 196.29,
+        "fours": 8,
+        "sixes": 2,
+        "predicted_runs": 53.35
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2018-02-18",
+        "runs": 70,
+        "balls": 42,
+        "strike_rate": 166.66,
+        "fours": 6,
+        "sixes": 3,
+        "predicted_runs": 70.1
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2018-03-06",
+        "runs": 11,
+        "balls": 6,
+        "strike_rate": 183.33,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 11.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2018-03-10",
+        "runs": 57,
+        "balls": 30,
+        "strike_rate": 190.0,
+        "fours": 2,
+        "sixes": 5,
+        "predicted_runs": 57.21
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2018-03-12",
+        "runs": 55,
+        "balls": 38,
+        "strike_rate": 144.73,
+        "fours": 3,
+        "sixes": 3,
+        "predicted_runs": 55.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2018-03-16",
+        "runs": 11,
+        "balls": 14,
+        "strike_rate": 78.57,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 11.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2018-08-14",
+        "runs": 1,
+        "balls": 3,
+        "strike_rate": 33.33,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2018-10-27",
+        "runs": 1,
+        "balls": 3,
+        "strike_rate": 33.33,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2019-01-11",
+        "runs": 17,
+        "balls": 19,
+        "strike_rate": 89.47,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 17.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2019-03-19",
+        "runs": 0,
+        "balls": 6,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2019-03-22",
+        "runs": 4,
+        "balls": 3,
+        "strike_rate": 133.33,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 4.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2019-09-01",
+        "runs": 79,
+        "balls": 53,
+        "strike_rate": 149.05,
+        "fours": 8,
+        "sixes": 2,
+        "predicted_runs": 79.07
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2019-09-03",
+        "runs": 26,
+        "balls": 24,
+        "strike_rate": 108.33,
+        "fours": 2,
+        "sixes": 2,
+        "predicted_runs": 26.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2019-10-27",
+        "runs": 0,
+        "balls": 3,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2019-10-30",
+        "runs": 1,
+        "balls": 4,
+        "strike_rate": 25.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2019-11-01",
+        "runs": 13,
+        "balls": 18,
+        "strike_rate": 72.22,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 13.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2020-03-04",
+        "runs": 0,
+        "balls": 2,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2020-03-06",
+        "runs": 11,
+        "balls": 13,
+        "strike_rate": 84.61,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 11.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2021-06-23",
+        "runs": 9,
+        "balls": 12,
+        "strike_rate": 75.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 9.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2021-06-24",
+        "runs": 39,
+        "balls": 39,
+        "strike_rate": 100.0,
+        "fours": 3,
+        "sixes": 1,
+        "predicted_runs": 39.24
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2021-06-26",
+        "runs": 6,
+        "balls": 4,
+        "strike_rate": 150.0,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 6.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-02-15",
+        "runs": 4,
+        "balls": 11,
+        "strike_rate": 36.36,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 4.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-02-18",
+        "runs": 27,
+        "balls": 21,
+        "strike_rate": 128.57,
+        "fours": 1,
+        "sixes": 2,
+        "predicted_runs": 27.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-02-20",
+        "runs": 69,
+        "balls": 58,
+        "strike_rate": 118.96,
+        "fours": 5,
+        "sixes": 1,
+        "predicted_runs": 69.15
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-06-07",
+        "runs": 1,
+        "balls": 5,
+        "strike_rate": 20.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 1.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-06-08",
+        "runs": 36,
+        "balls": 36,
+        "strike_rate": 100.0,
+        "fours": 2,
+        "sixes": 1,
+        "predicted_runs": 36.13
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-06-11",
+        "runs": 6,
+        "balls": 8,
+        "strike_rate": 75.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 6.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-08-27",
+        "runs": 2,
+        "balls": 4,
+        "strike_rate": 50.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 2.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-09-01",
+        "runs": 60,
+        "balls": 37,
+        "strike_rate": 162.16,
+        "fours": 4,
+        "sixes": 3,
+        "predicted_runs": 59.86
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-09-03",
+        "runs": 36,
+        "balls": 19,
+        "strike_rate": 189.47,
+        "fours": 2,
+        "sixes": 3,
+        "predicted_runs": 35.99
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-09-06",
+        "runs": 57,
+        "balls": 37,
+        "strike_rate": 154.05,
+        "fours": 4,
+        "sixes": 3,
+        "predicted_runs": 57.04
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-09-09",
+        "runs": 0,
+        "balls": 1,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-09-11",
+        "runs": 0,
+        "balls": 1,
+        "strike_rate": 0.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 0.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-10-16",
+        "runs": 6,
+        "balls": 6,
+        "strike_rate": 100.0,
+        "fours": 0,
+        "sixes": 0,
+        "predicted_runs": 6.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-10-18",
+        "runs": 18,
+        "balls": 13,
+        "strike_rate": 138.46,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 18.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-10-20",
+        "runs": 79,
+        "balls": 44,
+        "strike_rate": 179.54,
+        "fours": 5,
+        "sixes": 5,
+        "predicted_runs": 78.82
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-10-23",
+        "runs": 68,
+        "balls": 43,
+        "strike_rate": 158.13,
+        "fours": 5,
+        "sixes": 3,
+        "predicted_runs": 67.99
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-10-25",
+        "runs": 5,
+        "balls": 6,
+        "strike_rate": 83.33,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 5.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-10-29",
+        "runs": 4,
+        "balls": 3,
+        "strike_rate": 133.33,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 4.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-11-01",
+        "runs": 25,
+        "balls": 27,
+        "strike_rate": 92.59,
+        "fours": 2,
+        "sixes": 1,
+        "predicted_runs": 25.01
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2022-11-05",
+        "runs": 18,
+        "balls": 14,
+        "strike_rate": 128.57,
+        "fours": 1,
+        "sixes": 1,
+        "predicted_runs": 18.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2023-01-03",
+        "runs": 28,
+        "balls": 25,
+        "strike_rate": 112.0,
+        "fours": 5,
+        "sixes": 0,
+        "predicted_runs": 28.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2023-01-05",
+        "runs": 52,
+        "balls": 31,
+        "strike_rate": 167.74,
+        "fours": 3,
+        "sixes": 4,
+        "predicted_runs": 51.95
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2023-01-07",
+        "runs": 23,
+        "balls": 15,
+        "strike_rate": 153.33,
+        "fours": 2,
+        "sixes": 2,
+        "predicted_runs": 23.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2023-04-02",
+        "runs": 25,
+        "balls": 9,
+        "strike_rate": 277.77,
+        "fours": 3,
+        "sixes": 2,
+        "predicted_runs": 25.09
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2023-04-05",
+        "runs": 10,
+        "balls": 5,
+        "strike_rate": 200.0,
+        "fours": 1,
+        "sixes": 1,
+        "predicted_runs": 10.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2023-04-08",
+        "runs": 73,
+        "balls": 48,
+        "strike_rate": 152.08,
+        "fours": 6,
+        "sixes": 5,
+        "predicted_runs": 73.04
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2024-01-14",
+        "runs": 17,
+        "balls": 15,
+        "strike_rate": 113.33,
+        "fours": 2,
+        "sixes": 0,
+        "predicted_runs": 17.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2024-01-16",
+        "runs": 4,
+        "balls": 5,
+        "strike_rate": 80.0,
+        "fours": 1,
+        "sixes": 0,
+        "predicted_runs": 4.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2024-01-18",
+        "runs": 33,
+        "balls": 27,
+        "strike_rate": 122.22,
+        "fours": 4,
+        "sixes": 1,
+        "predicted_runs": 33.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2024-02-17",
+        "runs": 10,
+        "balls": 8,
+        "strike_rate": 125.0,
+        "fours": 0,
+        "sixes": 1,
+        "predicted_runs": 10.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2024-02-19",
+        "runs": 23,
+        "balls": 14,
+        "strike_rate": 164.28,
+        "fours": 4,
+        "sixes": 0,
+        "predicted_runs": 23.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2024-02-21",
+        "runs": 16,
+        "balls": 13,
+        "strike_rate": 123.07,
+        "fours": 3,
+        "sixes": 0,
+        "predicted_runs": 16.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2024-03-04",
+        "runs": 59,
+        "balls": 36,
+        "strike_rate": 163.88,
+        "fours": 6,
+        "sixes": 3,
+        "predicted_runs": 59.14
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2024-03-06",
+        "runs": 36,
+        "balls": 22,
+        "strike_rate": 163.63,
+        "fours": 2,
+        "sixes": 3,
+        "predicted_runs": 36.0
+      },
+      {
+        "player": "Kusal Mendis",
+        "date": "2024-03-09",
+        "runs": 86,
+        "balls": 55,
+        "strike_rate": 156.36,
+        "fours": 6,
+        "sixes": 6,
+        "predicted_runs": 86.11
+      }
+    ]
+  }
+}

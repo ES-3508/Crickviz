@@ -5,12 +5,12 @@ import ReactApexChart from 'react-apexcharts';
 interface PlayerDetail {
   player: string;
   date: string;
-  economy_rate: number;
-  bowling_average: number;
+  runs: number;
+  balls: number;
   strike_rate: number;
-  wickets_per_over: number;
-  dots_per_over: number;
-  predicted_performance: number;
+  fours: number;
+  sixes: number;
+  predicted_runs: number;
 }
 
 interface Data {
@@ -23,12 +23,12 @@ interface Data {
   player_details: Record<string, PlayerDetail[]>;
 }
 
-interface PlayerPerformanceChartProps {
+interface PlayerSixesChartProps {
   data: Data;
 }
 
-const PlayerPerformanceChart: React.FC<PlayerPerformanceChartProps> = ({ data }) => {
-  const [selectedMetric, setSelectedMetric] = useState<'economy_rate' | 'bowling_average' | 'strike_rate' | 'wickets_per_over' | 'dots_per_over' | 'predicted_performance'>('bowling_average');
+const PlayerSixesChart: React.FC<PlayerSixesChartProps> = ({ data }) => {
+  const [selectedMetric, setSelectedMetric] = useState<'runs' | 'balls' | 'strike_rate' | 'fours' | 'sixes'>('sixes');
 
   const options: ApexOptions = {
     legend: {
@@ -116,8 +116,8 @@ const PlayerPerformanceChart: React.FC<PlayerPerformanceChartProps> = ({ data })
       min: 0,
     },
     title: {
-      text: data.title,
-      align: 'left',
+      text: `Player performance with ${selectedMetric}`,
+      align: 'center',
     },
   };
 
@@ -135,18 +135,17 @@ const PlayerPerformanceChart: React.FC<PlayerPerformanceChartProps> = ({ data })
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5" style={{ width: '100%' }}>
       <div>
         <div className="flex justify-end mb-4">
-          <label className="mr-2">Select Metric:</label>
+          <label className="mr-2">Select Filter:</label>
           <select
             value={selectedMetric}
-            onChange={e => setSelectedMetric(e.target.value as 'economy_rate' | 'bowling_average' | 'strike_rate' | 'wickets_per_over' | 'dots_per_over' | 'predicted_performance')}
+            onChange={e => setSelectedMetric(e.target.value as 'runs' | 'balls' | 'strike_rate' | 'fours' | 'sixes')}
             className="border border-gray-300 rounded p-1"
           >
-            <option value="economy_rate">Economy Rate</option>
-            <option value="bowling_average">Bowling Average</option>
+            <option value="runs">Runs</option>
+            <option value="balls">Balls</option>
             <option value="strike_rate">Strike Rate</option>
-            <option value="wickets_per_over">Wickets per Over</option>
-            <option value="dots_per_over">Dots per Over</option>
-            <option value="predicted_performance">Predicted Performance</option>
+            <option value="fours">Fours</option>
+            <option value="sixes">Sixes</option>
           </select>
         </div>
         <div id="chartOne" className="-ml-5">
@@ -157,4 +156,4 @@ const PlayerPerformanceChart: React.FC<PlayerPerformanceChartProps> = ({ data })
   );
 };
 
-export default PlayerPerformanceChart;
+export default PlayerSixesChart;

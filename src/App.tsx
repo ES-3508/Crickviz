@@ -18,6 +18,7 @@ import Buttons from './pages/UiElements/Buttons';
 import Home from './pages/Home';
 import Player from './components/Player/Player';
 import Bowlers from './components/Bowlers/Bowlers';
+import Batmens from './components/Batmens/Batmens';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -90,7 +91,7 @@ function App() {
           element={
             <>
               <PageTitle title="Batmens" />
-              <Bowlers/>
+              <Batmens/>
             </>
           }
         />
