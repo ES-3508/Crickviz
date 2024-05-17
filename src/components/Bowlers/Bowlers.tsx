@@ -50,8 +50,8 @@ const Bowlers = () => {
         const bowlersResponse2 = await axios.get(
           `http://127.0.0.1:5000/api/unique-batsmen?country=${selectedTeam}`
         );
-        const bowlersData2: string[] = bowlersResponse.data;
-        const bowlersOptions2 = bowlersData.map((bowler) => ({
+        const bowlersData2: string[] = bowlersResponse2.data;
+        const bowlersOptions2 = bowlersData2.map((bowler) => ({
           value: bowler,
           text: bowler,
           selected: false,
