@@ -87,14 +87,6 @@ const Bowlers = () => {
     ...teamsOptions.filter((team) => team.value !== selectedTeam)
   ];
 
-  // const handleOppositeTeamChange = (selectedOptions) => {
-  //   if (selectedOptions.includes("All")) {
-  //     setSelectedOppositeTeam(["All"]);
-  //   } else {
-  //     setSelectedOppositeTeam(selectedOptions);
-  //   }
-  // };
-
   const filtersOptions = [
     { value: "runs", text: "Runs", selected: false },
     { value: "wickets", text: "Wickets", selected: false },
@@ -128,8 +120,8 @@ const Bowlers = () => {
                   </label>
                   <SingleSelect
                     options={oppositeTeamsOptions}
-                    selectedOptions={selectedOppositeTeam}
-                    setSelectedOptions={setSelectedOppositeTeam}
+                    selectedOption={selectedOppositeTeam}
+                    setSelectedOption={setSelectedOppositeTeam}
                   />
                 </div>
                 <div>
@@ -144,16 +136,16 @@ const Bowlers = () => {
                 </div>
               </div>
 
-              <div className="container mx-auto" style={{ height: '50vh' }}>
-                <div className="flex flex-wrap -mx-4 h-full space-x-4 space-y-4">
+              <div className="container mx-auto" style={{  }}>
+                <div className="flex flex-wrap -mx-4 h-full">
                   {data && (
                     <>
-                      <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                      <div className="w-full md:w-1/2 px-4 mb-8 h-1/2" style={{ marginBottom: '20px' }}>
                         <div className="h-full">
                           <PlayerSixesChart data={data} />
                         </div>
                       </div>
-                      <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                      <div className="w-full md:w-1/2 px-4 mb-8 h-1/2" style={{ marginBottom: '20px' }}>
                         <div className="h-full">
                           <PlayerSixesChart data={data} />
                         </div>
@@ -162,12 +154,12 @@ const Bowlers = () => {
                   )}
                   {data2 && (
                     <>
-                      <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                      <div className="w-full md:w-1/2 px-4 mb-8 h-1/2" style={{ marginBottom: '20px' }}>
                         <div className="h-full">
                           <PlayerBarChart data={data2} />
                         </div>
                       </div>
-                      <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                      <div className="w-full md:w-1/2 px-4 mb-8 h-1/2" style={{ marginBottom: '20px' }}>
                         <div className="h-full">
                           <PlayerBarChart data={data2} />
                         </div>

@@ -154,8 +154,8 @@ const Bowlers = () => {
                   </label>
                   <SingleSelect
                     options={oppositeTeamsOptions}
-                    selectedOptions={selectedOppositeTeam}
-                    setSelectedOptions={setSelectedOppositeTeam}
+                    selectedOption={selectedOppositeTeam}
+                    setSelectedOption={setSelectedOppositeTeam}
                   />
                 </div>
                 <div>
