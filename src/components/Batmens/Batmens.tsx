@@ -9,7 +9,7 @@ import PlayerBarChart from "../Charts/BatmensBarchart";
 
 const Bowlers = () => {
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
-  const [selectedOppositeTeam, setSelectedOppositeTeam] = useState<string | null>(null);
+  const [selectedOppositeTeam, setSelectedOppositeTeam] = useState<string[]>([]);
   const [selectedPlayer, setSelectedPlayer] = useState<string[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
   const [bowlersOptions, setBowlersOptions] = useState<
@@ -42,14 +42,12 @@ const Bowlers = () => {
         );
         const teamsData: string[] = teamsResponse.data;
         const updatedTeamsOptions = [
-          
           ...teamsData.map((team) => ({
-            
             value: team,
             text: team,
             selected: false,
           })),
-         
+          { value: "Other", text: "Other", selected: false },
         ];
         setTeamsOptions(updatedTeamsOptions);
 
@@ -65,7 +63,7 @@ const Bowlers = () => {
     const fetchData = async () => {
       if (
         selectedTeam &&
-        selectedOppositeTeam &&
+        selectedOppositeTeam.length > 0 &&
         selectedPlayer.length > 0
       ) {
         try {
@@ -87,9 +85,16 @@ const Bowlers = () => {
   const oppositeTeamsOptions = [
     { value: "all", text: "All", selected: false },
     ...teamsOptions.filter((team) => team.value !== selectedTeam),
-    
+    { value: "all", text: "All", selected: false },
   ];
-  
+
+  // const handleOppositeTeamChange = (selectedOptions) => {
+  //   if (selectedOptions.includes("All")) {
+  //     setSelectedOppositeTeam(["All"]);
+  //   } else {
+  //     setSelectedOppositeTeam(selectedOptions);
+  //   }
+  // };
 
   const filtersOptions = [
     { value: "runs", text: "Runs", selected: false },
@@ -122,7 +127,7 @@ const Bowlers = () => {
                   <label className="mb-3 block text-black dark:text-white">
                     Opposite Team
                   </label>
-                  <SingleSelect
+                  <MultiSelect
                     options={oppositeTeamsOptions}
                     selectedOptions={selectedOppositeTeam}
                     setSelectedOptions={setSelectedOppositeTeam}
@@ -140,30 +145,39 @@ const Bowlers = () => {
                 </div>
               </div>
 
-              <div className="container mx-auto">
-                <div className="flex flex-wrap -mx-4">
+              <div className="container mx-auto" style={{ height: '50vh' }}>
+                <div className="flex flex-wrap -mx-4 h-full space-x-4 space-y-4">
                   {data && (
                     <>
-                      <div className="w-full md:w-1/2 md:h-1/3 px-4 mb-4">
-                        <PlayerSixesChart data={data} />
+                      <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                        <div className="h-full">
+                          <PlayerSixesChart data={data} />
+                        </div>
                       </div>
-                      <div className="w-full md:w-1/2 md:h-1/3 px-4 mb-4">
-                        <PlayerSixesChart data={data} />
+                      <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                        <div className="h-full">
+                          <PlayerSixesChart data={data} />
+                        </div>
                       </div>
                     </>
                   )}
                   {data2 && (
                     <>
-                      <div className="w-full md:w-1/2 md:h-1/2 px-4 mb-4">
-                        <PlayerBarChart data={data2}/>
+                      <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                        <div className="h-full">
+                          <PlayerBarChart data={data2} />
+                        </div>
                       </div>
-                      <div className="w-full md:w-1/2 md:h-1/2 px-4 mb-4">
-                        <PlayerBarChart data={data2}/>
+                      <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                        <div className="h-full">
+                          <PlayerBarChart data={data2} />
+                        </div>
                       </div>
                     </>
                   )}
                 </div>
               </div>
+
             </div>
           </div>
         </div>
