@@ -1,8 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const SelectGroupTwo: React.FC = () => {
-  const [selectedOption, setSelectedOption] = useState<string>('');
-  const [isOptionSelected, setIsOptionSelected] = useState<boolean>(false);
+  const [options, setOptions] = useState([]);
+  const [selectedOption, setSelectedOption] = useState('');
+  const [isOptionSelected, setIsOptionSelected] = useState(false);
+
+  useEffect(() => {
+    // Fetch options from backend using Axios
+    axios
+      .get('/api/countries')
+      .then((response) => {
+        setOptions(response.data);
+      })
+      .catch((error) => {
+        console.error('Error fetching options:', error);
+      });
+  }, []);
 
   const changeTextColor = () => {
     setIsOptionSelected(true);
@@ -59,18 +73,15 @@ const SelectGroupTwo: React.FC = () => {
           <option value="" disabled className="text-body dark:text-bodydark">
             Select Country
           </option>
-          <option value="USA" className="text-body dark:text-bodydark">
-            USA
-          </option>
-          <option value="UK" className="text-body dark:text-bodydark">
-            UK
-          </option>
-          <option value="Canada" className="text-body dark:text-bodydark">
-            Canada
-          </option>
-          <option value="Srilanka" className="text-body dark:text-bodydark">
-            Sri Lanka
-          </option>
+          {options.map((option) => (
+            <option
+              key={option}
+              value={option}
+              className="text-body dark:text-bodydark"
+            >
+              {option}
+            </option>
+          ))}
         </select>
 
         <span className="absolute top-1/2 right-4 z-10 -translate-y-1/2">

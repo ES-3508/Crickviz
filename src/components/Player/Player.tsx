@@ -1,4 +1,4 @@
-import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
+import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb";
 // import CheckboxFive from '../../components/Checkboxes/CheckboxFive';
 // import CheckboxFour from '../../components/Checkboxes/CheckboxFour';
 // import CheckboxOne from '../../components/Checkboxes/CheckboxOne';
@@ -8,16 +8,21 @@ import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
 // import SwitcherOne from '../../components/Switchers/SwitcherOne';
 // import SwitcherThree from '../../components/Switchers/SwitcherThree';
 // import SwitcherTwo from '../../components/Switchers/SwitcherTwo';
-import DefaultLayout from '../../layout/DefaultLayout';
+import DefaultLayout from "../../layout/DefaultLayout";
 // import DatePickerOne from '../../components/Forms/DatePicker/DatePickerOne';
 // import DatePickerTwo from '../../components/Forms/DatePicker/DatePickerTwo';
-import SelectGroupTwo from '../../components/Forms/SelectGroup/SelectGroupTwo';
-import MultiSelect from '../../components/Forms/MultiSelect';
-import ChartOne from '../Charts/ChartOne';
-import ChartTwo from '../Charts/ChartTwo';
-import ChartThree from '../Charts/ChartThree';
+import SelectGroupTwo from "../../components/Forms/SelectGroup/SelectGroupTwo";
+import MultiSelect from "../../components/Forms/MultiSelect";
+import ChartOne from "../Charts/ChartOne";
+import ChartTwo from "../Charts/ChartTwo";
+import ChartThree from "../Charts/ChartThree";
 
 const Player = () => {
+  const options=[
+    { value: '1', text: 'Option 1', selected: false },
+    { value: '2', text: 'Option 2', selected: false },
+    { value: '3', text: 'Option 3', selected: false },
+  ]
   return (
     <DefaultLayout>
       <Breadcrumb pageName="Player" />
@@ -33,10 +38,9 @@ const Player = () => {
             </div>
             <div className="flex flex-col gap-5.5 p-6.5">
               <div>
-
                 {/* --------Country Dropdown field-------- */}
-                <div className="mb-5 block" >
-                <SelectGroupTwo />
+                <div className="mb-5 block">
+                  <SelectGroupTwo />
                 </div>
                 <label className="mb-3 block text-black dark:text-white">
                   Team
@@ -85,8 +89,6 @@ const Player = () => {
               <ChartThree />
             </div>
           </div>
-
-          
         </div>
 
         <div className="flex flex-col gap-9">
@@ -107,8 +109,8 @@ const Player = () => {
                   placeholder="Default textarea"
                   className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                 ></textarea> */}
-                 {/*--------- Dropdown field-------- */}
-                <MultiSelect id="multiSelect" />
+                {/*--------- Dropdown field-------- */}
+                <MultiSelect options={options} id="multiSelect" />
               </div>
 
               <div>
@@ -131,6 +133,7 @@ const Player = () => {
                   className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary dark:disabled:bg-black"
                 ></textarea>
               </div>
+
               <div>
                 <label className="mb-3 block text-black dark:text-white">
                   Player
@@ -140,6 +143,7 @@ const Player = () => {
                   className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary dark:disabled:bg-black"
                 ></textarea>
               </div>
+              
             </div>
           </div>
 
@@ -151,7 +155,6 @@ const Player = () => {
           </div>
 
           {/* <!-- Select input --> */}
-          
         </div>
       </div>
     </DefaultLayout>
