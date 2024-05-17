@@ -123,8 +123,9 @@ const Bowlers = () => {
   }, [selectedTeam, selectedOppositeTeam, selectedPlayer]);
 
   const oppositeTeamsOptions = [
-    ...teamsOptions.filter((team) => team.value !== selectedTeam),
     { value: "all", text: "All", selected: false },
+    ...teamsOptions.filter((team) => team.value !== selectedTeam),
+    
   ];
   
 
