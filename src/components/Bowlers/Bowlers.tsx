@@ -184,35 +184,37 @@ const Bowlers = () => {
                   </button>
                 </div> */}
               </div>
-              <div className="flex flex-wrap -mx-4 h-full space-x-4 space-y-4">
-                {data && (
-                  <>
-                    <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
-                      <div className="h-full">
-                        <PlayerSixesChart data={data} />
+              <div className="container mx-auto" style={{  }}>
+                <div className="flex flex-wrap -mx-4 h-full">
+                  {data && (
+                    <>
+                      <div className="w-full md:w-1/2 px-4 mb-8 h-1/2" style={{ marginBottom: '20px' }}>
+                        <div className="h-full">
+                          <PlayerSixesChart data={data} />
+                        </div>
                       </div>
-                    </div>
-                    <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
-                      <div className="h-full">
-                        <PlayerSixesChart data={data} />
+                      <div className="w-full md:w-1/2 px-4 mb-8 h-1/2" style={{ marginBottom: '20px' }}>
+                        <div className="h-full">
+                          <PlayerSixesChart data={data} />
+                        </div>
                       </div>
-                    </div>
-                  </>
-                )}
-                {data2 && (
-                  <>
-                    <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
-                      <div className="h-full">
-                        <PlayerBarChart data={data2} />
+                    </>
+                  )}
+                  {data2 && (
+                    <>
+                      <div className="w-full md:w-1/2 px-4 mb-8 h-1/2" style={{ marginBottom: '20px' }}>
+                        <div className="h-full">
+                          <PlayerBarChart data={data2} />
+                        </div>
                       </div>
-                    </div>
-                    <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
-                      <div className="h-full">
-                        <PlayerBarChart data={data2} />
+                      <div className="w-full md:w-1/2 px-4 mb-8 h-1/2" style={{ marginBottom: '20px' }}>
+                        <div className="h-full">
+                          <PlayerBarChart data={data2} />
+                        </div>
                       </div>
-                    </div>
-                  </>
-                )}
+                    </>
+                  )}
+                </div>
               </div>
             </div>
           </div>
