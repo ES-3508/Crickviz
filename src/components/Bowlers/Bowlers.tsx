@@ -7,13 +7,9 @@ import PlayerSixesChart from "../Charts/BowlersChart";
 import axios from "axios";
 import PlayerBarChart from "../Charts/BowlersBarchart";
 
-
-
 const Bowlers = () => {
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
-  const [selectedOppositeTeam, setSelectedOppositeTeam] = useState<string[]>(
-    []
-  );
+  const [selectedOppositeTeam, setSelectedOppositeTeam] =useState<string | null>(null);
   const [selectedOppositeTeam2, setSelectedOppositeTeam2] = useState<string[]>(
     []
   );
@@ -21,6 +17,9 @@ const Bowlers = () => {
   const [selectedPlayer2, setSelectedPlayer2] = useState<string[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
   const [bowlersOptions, setBowlersOptions] = useState<
+    { value: string; text: string; selected: boolean }[]
+  >([]);
+  const [bowlersOptions2, setBowlersOptions2] = useState<
     { value: string; text: string; selected: boolean }[]
   >([]);
   const [teamsOptions, setTeamsOptions] = useState<
@@ -31,7 +30,7 @@ const Bowlers = () => {
   >([]);
 
   const [data, setData] = useState<any>(null); // Initialize data state
-  const [data2, setData2] = useState<any>(null); 
+  const [data2, setData2] = useState<any>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -48,6 +47,17 @@ const Bowlers = () => {
         }));
         setBowlersOptions(bowlersOptions);
 
+        const bowlersResponse2 = await axios.get(
+          `http://127.0.0.1:5000/api/unique-batsmen?country=${selectedTeam}`
+        );
+        const bowlersData2: string[] = bowlersResponse2.data;
+        const bowlersOptions2 = bowlersData2.map((bowler) => ({
+          value: bowler,
+          text: bowler,
+          selected: false,
+        }));
+        setBowlersOptions(bowlersOptions2);
+
         // Fetch teams
         const teamsResponse = await axios.get(
           "http://127.0.0.1:5000/api/bowling/countries"
@@ -62,7 +72,6 @@ const Bowlers = () => {
           { value: "Other", text: "Other", selected: false },
         ];
         setTeamsOptions(updatedTeamsOptions);
-
 
         const teamsResponse2 = await axios.get(
           "http://127.0.0.1:5000/api/batting/countries"
@@ -94,11 +103,11 @@ const Bowlers = () => {
     const fetchData = async () => {
       if (
         selectedTeam &&
-        selectedOppositeTeam.length > 0 &&
+        selectedOppositeTeam &&
         selectedPlayer.length > 0
       ) {
         try {
-          const url = `http://127.0.0.1:5000/api/bowling/other-data?selectedTeam=${selectedTeam}&oppositeTeam=${selectedOppositeTeam}&players=${selectedPlayer}`;
+          const url = `http://127.0.0.1:5000/api/bowling/other-data1?selectedTeam=${selectedTeam}&oppositeTeam=${selectedOppositeTeam}&players=${selectedPlayer}`;
           const additionalDataResponse = await axios.get(url);
           setData(additionalDataResponse.data);
           const url2 = `http://127.0.0.1:5000/api/bowling/other-data2?selectedTeam=${selectedTeam}&oppositeTeam=${selectedOppositeTeam}&players=${selectedPlayer2}`;
@@ -113,9 +122,12 @@ const Bowlers = () => {
     fetchData();
   }, [selectedTeam, selectedOppositeTeam, selectedPlayer]);
 
-  const oppositeTeamsOptions = teamsOptions2.filter(
-    (team) => team.value !== selectedTeam
-  );
+  const oppositeTeamsOptions = [
+    { value: "all", text: "All", selected: false },
+    ...teamsOptions.filter((team) => team.value !== selectedTeam),
+    
+  ];
+  
 
   return (
     <DefaultLayout>
@@ -140,7 +152,7 @@ const Bowlers = () => {
                   <label className="mb-3 block text-black dark:text-white">
                     Opposite Team
                   </label>
-                  <MultiSelect
+                  <SingleSelect
                     options={oppositeTeamsOptions}
                     selectedOptions={selectedOppositeTeam}
                     setSelectedOptions={setSelectedOppositeTeam}
@@ -155,18 +167,16 @@ const Bowlers = () => {
                     selectedOptions={selectedPlayer}
                     setSelectedOptions={setSelectedPlayer}
                   />
-                  
                 </div>
                 <div>
                   <label className="mb-3 block text-black dark:text-white">
                     Players for Bar chart
                   </label>
                   <MultiSelect
-                    options={bowlersOptions}
+                    options={bowlersOptions2}
                     selectedOptions={selectedPlayer2}
                     setSelectedOptions={setSelectedPlayer2}
                   />
-                  
                 </div>
                 {/* <div>
                   <button className="bg-blue-500 min-h-[50px] min-w-[200px] rounded-lg text-white pt mt-11">
@@ -174,42 +184,35 @@ const Bowlers = () => {
                   </button>
                 </div> */}
               </div>
-              {/* <div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)", // Two columns per row
-    gap: "20px",
-    maxHeight: "100%",
-  }}
->
-  {data && (
-    <>
-      <PlayerSixesChart data={data} />
-      <PlayerSixesChart data={data} />
-      <PlayerSixesChart data={data} />
-      <PlayerSixesChart data={data} />
-    </>
-  )}
-</div> */}
-              <div className="container mx-auto">
-                <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
-                  {data && (
-                    <>
-                      <PlayerSixesChart data={data} />
-                      <PlayerSixesChart data={data} />
-                      {/* <PlayerSixesChart data={data} />
-                      <PlayerSixesChart data={data} /> */}
-                    </>
-                  )}
-                  {data2 && (
-                    <>
-                      <PlayerBarChart data={data2}/>
-                      <PlayerBarChart data={data2}/>
-                      {/* <PlayerSixesChart data={data} />
-                      <PlayerSixesChart data={data} /> */}
-                    </>
-                  )}
-                </div>
+              <div className="flex flex-wrap -mx-4 h-full space-x-4 space-y-4">
+                {data && (
+                  <>
+                    <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                      <div className="h-full">
+                        <PlayerSixesChart data={data} />
+                      </div>
+                    </div>
+                    <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                      <div className="h-full">
+                        <PlayerSixesChart data={data} />
+                      </div>
+                    </div>
+                  </>
+                )}
+                {data2 && (
+                  <>
+                    <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                      <div className="h-full">
+                        <PlayerBarChart data={data2} />
+                      </div>
+                    </div>
+                    <div className="w-full md:w-1/2 px-4 mb-4 h-1/2">
+                      <div className="h-full">
+                        <PlayerBarChart data={data2} />
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </div>

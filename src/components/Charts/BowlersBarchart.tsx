@@ -54,8 +54,8 @@ const PlayerBarChart: React.FC<PlayerBarChartProps> = ({ data }) => {
       position: 'top',
     },
     title: {
-      text: data.title,
-      align: 'left',
+      text: `Player performance with ${selectedMetric}`,
+      align: 'center',
     },
     dataLabels: {
       enabled: false,

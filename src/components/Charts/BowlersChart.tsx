@@ -116,8 +116,8 @@ const PlayerPerformanceChart: React.FC<PlayerPerformanceChartProps> = ({ data })
       min: 0,
     },
     title: {
-      text: data.title,
-      align: 'left',
+      text: `Player performance with ${selectedMetric}`,
+      align: 'center',
     },
   };
 
