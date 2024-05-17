@@ -9,7 +9,7 @@ import PlayerBarChart from "../Charts/BatmensBarchart";
 
 const Bowlers = () => {
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
-  const [selectedOppositeTeam, setSelectedOppositeTeam] = useState<string[]>([]);
+  const [selectedOppositeTeam, setSelectedOppositeTeam] = useState<string | null>(null);
   const [selectedPlayer, setSelectedPlayer] = useState<string[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string[]>([]);
   const [bowlersOptions, setBowlersOptions] = useState<
@@ -63,7 +63,7 @@ const Bowlers = () => {
     const fetchData = async () => {
       if (
         selectedTeam &&
-        selectedOppositeTeam.length > 0 &&
+        selectedOppositeTeam &&
         selectedPlayer.length > 0
       ) {
         try {
@@ -127,7 +127,7 @@ const Bowlers = () => {
                   <label className="mb-3 block text-black dark:text-white">
                     Opposite Team
                   </label>
-                  <MultiSelect
+                  <SingleSelect
                     options={oppositeTeamsOptions}
                     selectedOptions={selectedOppositeTeam}
                     setSelectedOptions={setSelectedOppositeTeam}

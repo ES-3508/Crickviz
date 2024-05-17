@@ -9,9 +9,7 @@ import PlayerBarChart from "../Charts/BowlersBarchart";
 
 const Bowlers = () => {
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
-  const [selectedOppositeTeam, setSelectedOppositeTeam] = useState<string[]>(
-    []
-  );
+  const [selectedOppositeTeam, setSelectedOppositeTeam] =useState<string | null>(null);
   const [selectedOppositeTeam2, setSelectedOppositeTeam2] = useState<string[]>(
     []
   );
@@ -105,7 +103,7 @@ const Bowlers = () => {
     const fetchData = async () => {
       if (
         selectedTeam &&
-        selectedOppositeTeam.length > 0 &&
+        selectedOppositeTeam &&
         selectedPlayer.length > 0
       ) {
         try {
@@ -124,9 +122,11 @@ const Bowlers = () => {
     fetchData();
   }, [selectedTeam, selectedOppositeTeam, selectedPlayer]);
 
-  const oppositeTeamsOptions = teamsOptions2.filter(
-    (team) => team.value !== selectedTeam
-  );
+  const oppositeTeamsOptions = [
+    ...teamsOptions.filter((team) => team.value !== selectedTeam),
+    { value: "all", text: "All", selected: false },
+  ];
+  
 
   return (
     <DefaultLayout>
@@ -151,7 +151,7 @@ const Bowlers = () => {
                   <label className="mb-3 block text-black dark:text-white">
                     Opposite Team
                   </label>
-                  <MultiSelect
+                  <SingleSelect
                     options={oppositeTeamsOptions}
                     selectedOptions={selectedOppositeTeam}
                     setSelectedOptions={setSelectedOppositeTeam}
